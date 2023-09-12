@@ -1,0 +1,116 @@
+/* || Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* || Memberikan Default untuk Position Box dan Font Family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* || Background Utama */
+main {
+    height: 100vh;
+    background-color: #fcffe7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* || Bagian Box Card */
+.box-card {
+    height: 460px;
+    width: 400px;
+    background-color: #bad7e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* || Bagian Header Card */
+.content-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b3467;
+    box-shadow: 0px 5px 0px gray;
+    color: #fcffe7;
+}
+
+/* || Bagian Content Card */
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+/* || Bagian Content Penandatanganan */
+
+.content .label-sign {
+    margin-top: 15px;
+    color: #2b3467;
+}
+
+/* || Bagian Content Perihal */
+
+.content .label-purpose {
+    color: #2b3467;
+}
+
+/* || Bagian Content Unit Kerja */
+
+.content .label-working-unit {
+    margin-bottom: 20px;
+    color: #2b3467;
+}
+
+/* || Styling Header Penandatanganan,Perihal, Unit Kerja */
+.content .label-sign h3,
+.content .label-purpose h3,
+.content .label-working-unit h3 {
+    font-size: 1rem;
+    color: #2b3467;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+/* || Styling Content Penandatanganan,Perihal, Unit Kerja */
+.content .label-sign .content-sign,
+.content .label-purpose .content-purpose,
+.content .label-working-unit .content-label-working-unit {
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* || Media Query */
+@media (max-width: 600px) {
+    /* || Styling Box Card */
+    .box-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* || Styling Header Penandatanganan,Perihal, Unit Kerja */
+    .content .label-sign h3,
+    .content .label-purpose h3,
+    .content .label-working-unit h3 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    /* || Styling Content Penandatanganan,Perihal, Unit Kerja */
+    .content .label-sign .content-sign,
+    .content .label-purpose .content-purpose,
+    .content .label-working-unit .content-label-working-unit {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+}
