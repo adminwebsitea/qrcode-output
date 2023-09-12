@@ -48,27 +48,30 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 0px 40px;
 }
 
 /* || Bagian Content Penandatanganan */
 
 .content .label-sign {
-    margin-top: 15px;
+    margin-top: 30px;
+    width: 100%;
     color: #2b3467;
 }
 
 /* || Bagian Content Perihal */
 
 .content .label-purpose {
+    width: 100%;
     color: #2b3467;
 }
 
 /* || Bagian Content Unit Kerja */
 
 .content .label-working-unit {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #2b3467;
+    width: 100%;
 }
 
 /* || Styling Header Penandatanganan,Perihal, Unit Kerja */
@@ -97,11 +100,31 @@ main {
         height: 100%;
     }
 
+    .content {
+        padding: 0px 40px;
+    }
+
+    .content .label-sign {
+        width: 100%;
+    }
+
+    /* || Bagian Content Perihal */
+
+    .content .label-purpose {
+        width: 100%;
+    }
+
+    /* || Bagian Content Unit Kerja */
+
+    .content .label-working-unit {
+        width: 100%;
+    }
+
     /* || Styling Header Penandatanganan,Perihal, Unit Kerja */
     .content .label-sign h3,
     .content .label-purpose h3,
     .content .label-working-unit h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         letter-spacing: 1px;
         font-weight: 400;
     }
@@ -109,7 +132,7 @@ main {
     .content .label-sign .content-sign,
     .content .label-purpose .content-purpose,
     .content .label-working-unit .content-label-working-unit {
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 2px;
         font-weight: 600;
     }
