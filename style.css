@@ -93,18 +93,75 @@ main {
 }
 
 /* || Media Query */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     /* || Styling Box Card */
+    main {
+        height: auto;
+    }
     .box-card {
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
 
     .content {
-        padding: 0px 40px;
+        padding: 0px 35px;
+        justify-content: space-evenly;
     }
 
     .content .label-sign {
+        margin-top: 30px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* || Bagian Content Perihal */
+
+    .content .label-purpose {
+        width: 100%;
+    }
+
+    /* || Bagian Content Unit Kerja */
+
+    .content .label-working-unit {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* || Styling Header Penandatanganan,Perihal, Unit Kerja */
+    .content .label-sign h3,
+    .content .label-purpose h3,
+    .content .label-working-unit h3 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    /* || Styling Content Penandatanganan,Perihal, Unit Kerja */
+    .content .label-sign .content-sign,
+    .content .label-purpose .content-purpose,
+    .content .label-working-unit .content-label-working-unit {
+        font-size: 1.3rem;
+        letter-spacing: 2.5px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-height: 915px) and (min-height: 741px) {
+    /* || Styling Box Card */
+    main {
+        height: auto;
+    }
+    .box-card {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content {
+        padding: 0px 31px;
+        justify-content: space-evenly;
+    }
+
+    .content .label-sign {
+        margin-top: 30px;
         width: 100%;
     }
 
@@ -118,6 +175,7 @@ main {
 
     .content .label-working-unit {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     /* || Styling Header Penandatanganan,Perihal, Unit Kerja */
@@ -127,12 +185,13 @@ main {
         font-size: 2rem;
         letter-spacing: 1px;
         font-weight: 400;
+        padding-bottom: 10px;
     }
     /* || Styling Content Penandatanganan,Perihal, Unit Kerja */
     .content .label-sign .content-sign,
     .content .label-purpose .content-purpose,
     .content .label-working-unit .content-label-working-unit {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         letter-spacing: 2px;
         font-weight: 600;
     }
