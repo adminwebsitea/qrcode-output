@@ -217,10 +217,12 @@ main {
         height: 100%;
         display: flex;
         align-items: center;
+        background-color: #2b3467;
     }
     .content .content-file .btn-file button {
+        border: none;
+        background-color: transparent;
         width: 100%;
-        display: flex;
         font-size: 0.8rem;
         padding-top: 2px;
         font-weight: 100;
