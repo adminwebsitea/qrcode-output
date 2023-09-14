@@ -45,7 +45,7 @@ main {
 .content {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     padding: 0px 40px;
@@ -69,7 +69,6 @@ main {
 /* || Bagian Content Unit Kerja */
 
 .content .label-working-unit {
-    margin-bottom: 30px;
     color: #2b3467;
     width: 100%;
 }
@@ -92,6 +91,51 @@ main {
     font-weight: 600;
 }
 
+/* || Bagian Button File PDF */
+/* || Container File PDF */
+.content .content-file {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* || File Format Logo */
+.content .content-file .file-format {
+    background-color: #fcffe7;
+    text-align: center;
+    height: 100%;
+    width: 20%;
+    padding-top: 2px;
+    border-right: 2px solid gray;
+}
+.content .content-file .file-format h3 {
+    width: 100%;
+    font-size: 1rem;
+    color: #2b3467;
+}
+
+/* || Button File */
+.content .content-file .btn-file {
+    width: 100%;
+}
+.content .content-file .btn-file button {
+    border: none;
+    background-color: #2b3467;
+    text-decoration: underline;
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding-top: 2px;
+    color: #fcffe7;
+    font-weight: 100;
+}
+
+.content .content-file .btn-file button:hover {
+    text-decoration: none;
+}
 /* || Media Query */
 @media screen and (max-width: 600px) {
     /* || Styling Box Card */
@@ -105,11 +149,10 @@ main {
 
     .content {
         padding: 0px 35px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .content .label-sign {
-        margin-top: 30px;
         width: 100%;
         text-align: justify;
     }
@@ -124,25 +167,67 @@ main {
 
     .content .label-working-unit {
         width: 100%;
-        margin-bottom: 30px;
     }
 
     /* || Styling Header Penandatanganan,Perihal, Unit Kerja */
     .content .label-sign h3,
     .content .label-purpose h3,
     .content .label-working-unit h3 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         letter-spacing: 1px;
         font-weight: 400;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
     }
     /* || Styling Content Penandatanganan,Perihal, Unit Kerja */
     .content .label-sign .content-sign,
     .content .label-purpose .content-purpose,
     .content .label-working-unit .content-label-working-unit {
-        font-size: 1.3rem;
+        font-size: 1.28rem;
         letter-spacing: 2.5px;
         font-weight: 600;
+    }
+
+    /* || Bagian Button File PDF  */
+    /* || Container File PDF */
+    .content .content-file {
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* || File Format Logo */
+    .content .content-file .file-format {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 20%;
+        padding-top: 2px;
+    }
+    .content .content-file .file-format h3 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* || Button File */
+    .content .content-file .btn-file {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .content .content-file .btn-file button {
+        width: 100%;
+        display: flex;
+        font-size: 0.8rem;
+        padding-top: 2px;
+        font-weight: 100;
+    }
+
+    .content .content-file .btn-file button:hover {
+        text-decoration: none;
     }
 }
 @media screen and (max-height: 915px) and (min-height: 741px) {
@@ -157,7 +242,7 @@ main {
 
     .content {
         padding: 0px 31px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .content .label-sign {
@@ -194,5 +279,44 @@ main {
         font-size: 1.5rem;
         letter-spacing: 2px;
         font-weight: 600;
+    }
+
+    /* || Bagian Button File PDF  */
+    /* || Container File PDF */
+    .content .content-file {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    /* || File Format Logo */
+    .content .content-file .file-format {
+        text-align: center;
+        height: 100%;
+        width: 20%;
+        padding-top: 2px;
+    }
+    .content .content-file .file-format h3 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* || Button File */
+    .content .content-file .btn-file {
+        width: 100%;
+    }
+    .content .content-file .btn-file button {
+        border: none;
+        width: 100%;
+        height: 28px;
+        font-size: 0.8rem;
+        padding-top: 2px;
+        font-weight: 100;
+    }
+
+    .content .content-file .btn-file button:hover {
+        text-decoration: none;
     }
 }
